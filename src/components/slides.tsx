@@ -36,7 +36,7 @@ return ()=>  clearInterval(intervalId)
 
     <div className='wrapper'>
       <section className='container'>
-{Array(4).fill("").map((item,index)=>{
+{Array(4).fill("").map((_,index)=>{
 
 return <div  style={{background:`${index % 2 == 0 ? "blue" : "yellow"}`,transform:`translateX(${itemToShow}%)`}} className='each-card'>
   {index + 1}

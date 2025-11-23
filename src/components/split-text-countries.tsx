@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/SplitText'
 
@@ -43,7 +43,7 @@ const data = [
 const SplitTextCountries = () => {
 
     const imageContainerRef = useRef<HTMLDivElement[] | []>([])
-    const [currIndex,setCurrIndex] = useState<number>(data.length + 2)
+    // const [currIndex,setCurrIndex] = useState<number>(data.length + 2)
     const [mouseLeave,setMouseLeave] = useState<boolean>(true)
     const [interValCount,setIntervalCount] = useState<number>(0)
     const [pageRendered,setPageRendered] = useState<boolean>(false)
@@ -147,6 +147,7 @@ gsap.from(splitText.chars,{
 })
 
 
+console.log(clx);
 
 }
 
