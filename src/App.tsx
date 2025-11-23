@@ -33,14 +33,14 @@ function App() {
    <br />
    <br />
    <br />
-<Play/>
+{/* <Play/> */}
 
 <br />
-<SplitTextComponent/>
+{/* <SplitTextComponent/> */}
 <br />
-<Stagger/>
+{/* <Stagger/> */}
 <br />
-<Timeline/>
+{/* <Timeline/> */}
 <br />
    {/* <Slides/> */}
    </>
