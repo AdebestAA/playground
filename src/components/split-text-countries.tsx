@@ -162,7 +162,7 @@ gsap.from(splitText.chars,{
 })
 
 
-console.log(clx);
+// console.log(clx);
 
 }
 
@@ -175,7 +175,7 @@ if (!mouseLeave) {
     return
 }
 
-console.log(interValCount);
+// console.log(interValCount);
 
   const interValId = setInterval(()=>{
     
@@ -220,7 +220,11 @@ useEffect(()=>{
   return (
     <div className='font-barlow py-8'>
 
-      <div className='overflow-y-hidden'>
+<aside className='lg:hidden '>
+<h1 className='text-center'>sorry,this animation/visual effect os only available for desktop view</h1>
+</aside>
+   <aside className='lg:block hidden'>
+   <div className='overflow-y-hidden'>
       <h1 className='team-members text-center  text-[4rem] font-bold '>TEAM MEMBERS</h1>
       </div>
 
@@ -286,6 +290,7 @@ imageContainerRef.current[index] = el
      })}
      </aside>
        </div>
+   </aside>
        </div>
   )
 }
