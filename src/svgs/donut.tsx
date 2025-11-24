@@ -2,7 +2,7 @@
 
 const Donut = () => {
   return (
-    <svg  viewBox="0 0 1024 1024" className="icon donut w-[1em] h-[1em] inline-block translate-x-[-200%]" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(0)">
+    <svg  viewBox="0 0 1024 1024" className="icon z-50 donut w-[1em] h-[1em] inline-block translate-x-[-200%]" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(0)">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
