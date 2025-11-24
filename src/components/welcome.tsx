@@ -329,7 +329,7 @@ const words = "I am Adebest and I love animations and visual effects"
 
 
 <h1 className="scroll-down  text-center">Scroll Down</h1>
-<h1 className="iamadebest  text-center flex flex-wrap gap-x-4 justify-center md:px-0 px-2">
+{/* <h1 className="iamadebest  text-center flex flex-wrap gap-x-4 justify-center md:px-0 px-2">
  {words.split(" ").map((word:string,index:number)=>{
 
   return <div className={`word-wrapper-${index}  overflow-hidden lg:text-[8rem] `}>
@@ -340,8 +340,8 @@ const words = "I am Adebest and I love animations and visual effects"
     </div>
   </div>
  })}
-  {/* <span className="overflow-hidden  inline-flex items-center justify-center "><Donut/></span> */}
-</h1>
+  <span className="overflow-hidden  inline-flex items-center justify-center "><Donut/></span>
+</h1> */}
 </div>
 
     </div>

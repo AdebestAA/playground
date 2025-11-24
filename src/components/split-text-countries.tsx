@@ -8,33 +8,48 @@ gsap.registerPlugin(SplitText)
 const data = [
     {
         id:1,
-        name:"Port",
-        img:"/pg.png"
+        name:"Amara",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763995731/portrait-beautiful-smiling-woman-with-curly-hair-looking-camera_1_dtaf9b.jpg"
     },
     {
         id:2,
-        name:"Indonesia",
-        img:"/id.png"
+        name:"Sophia",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763995717/young-sensual-african-american-woman-looking-camera_1_mo6axe.jpg"
     },
     {
         id:3,
-        name:"Nigeria",
-        img:"/ng.png"
+        name:"Olivia",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992976/portrait-cute-african-american-curly-young-woman-studio_i78dhy.jpg"
     },
     {
         id:4,
-        name:"India",
-        img:"/in.png"
+        name:"Zainab",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992891/smiling-young-woman-with-curly-hair_fiw6tt.jpg"
     },
     {
         id:5,
-        name:"China",
-        img:"/cn.png"
+        name:"Michael",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992797/portrait-young-african-american-man_ayecjt.jpg"
     },
     {
         id:6,
-        name:"Mexico",
-        img:"/mx.png"
+        name:"Aisha",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992822/people-showing-support-respect-with-yellow-background-suicide-prevention-day_cwg1e7.jpg"
+    },
+    {
+        id:7,
+        name:"Fadekemi",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992799/smiling-black-woman-with-curly-hair-hoop-earrings_p3njwr.jpg"
+    },
+    {
+        id:8,
+        name:"Oyin",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763995717/worldface-russian-woman-white-background_1_vvolq5.jpg"
+    },
+    {
+        id:9,
+        name:"ADELAJA",
+        img:"https://res.cloudinary.com/ddojoiqku/image/upload/v1763992832/close-up-man-portrait-new-york-city_qfabhz.jpg"
     },
 ]
 
@@ -178,17 +193,39 @@ console.log(interValCount);
  },250)
 
 
+
+
  return ()=> clearInterval(interValId)
  
 },[mouseLeave,interValCount])
 
+
+useEffect(()=>{
+    const split = SplitText.create(".team-members",{
+        type:"chars"
+    })
+
+    gsap.from(split.chars,{
+        y:100,
+        duration:2,
+        autoAlpha:0,
+        stagger:{
+            amount:1,
+            from:"start"
+        }
+    })
+
+},[])
+
   return (
     <div className='font-barlow py-8'>
 
-       <h1 className='text-center  text-lg font-bold'>Split Text Countries</h1>
+      <div className='overflow-y-hidden'>
+      <h1 className='team-members text-center  text-[4rem] font-bold '>TEAM MEMBERS</h1>
+      </div>
 
 
-       <section className='flex justify-between overflow-hidden w-[50%] mx-auto py-8 px-4'>
+       <section className='flex justify-between gap-x-4 overflow-hidden w-[50%] mx-auto py-8 px-4'>
         {data.map((item,index:number)=>{
 
             return <div
@@ -234,14 +271,14 @@ imageContainerRef.current[index] = el
         >
 {/* ${index % 2 == 0 ? "bg-[red]" : "bg-[blue]"}  */}
 
-     {pageRendered && [...data.map(item => item),{name:"Capitals",id:data.length,img:""}].map((item,index)=>{
+     {pageRendered && [...data.map(item => item),{name:"the squad",id:data.length,img:""}].map((item,index)=>{
          
          return   <h1
         //  style={{
             //     transform:`translateY(-${currIndex * 100}%)`
         // }}
          className={`counttry-name text-[4rem] uppercase   transition-transform ease-in-out duration-500 text-center  flex flex-col items-center justify-center opacity-0 `} key={index + 1} >
-            <span className={`split-text font-black text-[15rem]  ${item.name == "Capitals" ? "text-white": "text-[red]"} `}>
+            <span className={`split-text font-black text-[15rem]  ${item.name == "the squad" ? "text-white": "text-[red]"} `}>
             {item.name}
         </span>
         </h1>

@@ -8,6 +8,7 @@ import './index.css'
 // import CursorEffect from './components/cursor-effect'
 // import SplitTextCountries from './components/split-text-countries'
 import Welcome from './components/welcome'
+import SplitTextCountries from './components/split-text-countries'
 
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
    <>
 
 {/* <CursorEffect/> */}
-{/* <SplitTextCountries/> */}
 
 
-<Welcome/>
+{/* <Welcome/> */}
 
+<SplitTextCountries/>
    <br />
    <br />
    <br />
