@@ -106,7 +106,7 @@ const texts = ["P","L","A","Y","G","R","O","U","N","D"]
 
 return <div key={index} ref={el => {
 boxesRef.current[index] = el as HTMLDivElement
-}} className="box  relative flex overflow-hidden font-barlow font-bold ">
+}} className="box  relative flex overflow-hidden font-barlow font-bold md:text-[6rem] text-[2.5rem]">
     <section className="original md:w-[50px] w-[20px] text-center text-split">{text}</section>
     <section className="clone absolute top-0  text-center left-0 md:w-[50px] w-[20px] text-split" >{text}</section>
 </div>

@@ -55,21 +55,12 @@ tl.from(split.chars, {
     scaleX:1,
     duration: 1,
     yPercent: 0,
-    autoAlpha: 1,
+    autoAlpha: 0.5,
     stagger: {
       amount:2,
       from:"random"
     },
     ease: "power3.in"
-  }).from(".donus",{
-autoAlpha:0,
-translateX:-200,
-
-  }).to(".donut",{
-    autoAlpha:1,
-    x:0,
-    rotate:"360deg",
-    duration:1
   })
 
 
@@ -89,7 +80,8 @@ translateX:-200,
     xPercent:"random([-100,100])",
     rotation:"random(-80,80)",
     delay:8,
-    autoAlpha:0.5,
+   
+    autoAlpha:gsap.utils.random(1,0),
     repeat:-1,
     yoyo:true,
     duration:2,
