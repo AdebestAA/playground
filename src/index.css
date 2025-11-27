@@ -7,12 +7,12 @@
 
 
 
-
 body{
     background-color: black;
     color: white;
     cursor: default;
-    overflow-x: hidden;
+    
+    
 }
 /* for word,line and char */
 
@@ -54,3 +54,11 @@ body{
     --breakpoint-xl: 1024px;
     --breakpoint-2xl: 1280px;
   }
+
+
+  .prepareForAnimatioon{
+transform: translateZ(0);
+will-change: transform;
+  }
+
+

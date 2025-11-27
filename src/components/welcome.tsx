@@ -86,9 +86,10 @@ translateX:-200,
 
   gsap.to(split.chars,{
     yPercent:"random([-100,100])",
+    xPercent:"random([-100,100])",
     rotation:"random(-80,80)",
     delay:8,
-    autoAlpha:1,
+    autoAlpha:0.5,
     repeat:-1,
     yoyo:true,
     duration:2,
@@ -186,14 +187,6 @@ translateX:-200,
 
 
 
-useEffect(()=>{
-gsap.to(".scroll-down",{
-  translateY:"-100%",
-  yoyo:true,
-  repeat:-1
-})
-
-}),[]
 useEffect(()=>{
 
 // const split = SplitText.create(".iamadebest",{
@@ -320,15 +313,22 @@ xPercent:"0"
 
 const words = "I am Adebest and I love animations and visual effects"
   return (
-    <div className="md:w-[90%] mx-auto ">
+    <div className="w-[90%] mx-auto  h-screen flex items-center justify-center overflow-hidden">
         
-<div className="text-[5rem] font-bold flex flex-col ">
-  <section className="mb-64 mt-24">
-<h1 className="text-center  font-blackOps"><span className="welcome-text overflow-y-hidden">Welcome to my Playground</span> </h1> 
+
+  <section className=" mx-auto w-full md:font-extrabold font-black lg:text-[6rem] md:text-[5rem] sm:text-[4.3rem] xs:text-[3.7rem] text-[3rem]">
+<h1 className="text-center  font-barlow uppercase"><span className="welcome-text overflow-y-hidden ">
+   undergoing <span className="md:inline inline-block">development</span>
+  <br />
+    please check
+    <br />
+     back later
+    </span> </h1> 
   </section>
 
 
-<h1 className="scroll-down  text-center">Scroll Down</h1>
+
+
 {/* <h1 className="iamadebest  text-center flex flex-wrap gap-x-4 justify-center md:px-0 px-2">
  {words.split(" ").map((word:string,index:number)=>{
 
@@ -342,7 +342,7 @@ const words = "I am Adebest and I love animations and visual effects"
  })}
   <span className="overflow-hidden  inline-flex items-center justify-center "><Donut/></span>
 </h1> */}
-</div>
+
 
     </div>
   )

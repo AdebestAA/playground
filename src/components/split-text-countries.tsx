@@ -278,14 +278,14 @@ key={index + 1}
             }
             }
             // w-[100px] h-[100px] bg-[red]
-            className='opacity-0  rounded-md'
+            className='opacity-0  rounded-md cursor-pointer'
 
             ref={(el:HTMLDivElement) => {
 imageContainerRef.current[index] = el
 
             }}
             >
-                <img className='w-[80px] h-[80px] object-cover bg-gray-200 rounded-lg' loading='lazy' src={item.img} alt={item.name} />
+                <img className='prepareForAnimatioon w-[80px] h-[80px] object-cover bg-gray-200 rounded-lg ' loading='lazy' src={item.img} alt={item.name} />
             </div>
         })}
 
@@ -312,7 +312,7 @@ imageContainerRef.current[index] = el
             ref={(el)=> {
                 splitTextRefs.current[index] = el as HTMLSpanElement
             }}
-            className={`split-text font-black text-[15rem]  ${item.name == "the squad" ? "text-white": "text-[red]"} `}>
+            className={`split-text font-barlow text-[15rem] font-black ${item.name == "the squad" ? "text-white": "text-[red]"} `}>
             {item.name}
         </span>
         </h1>
