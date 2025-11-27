@@ -32,6 +32,10 @@ const tl = gsap.timeline()
 
 // })
 
+gsap.to(".all-container",{
+  opacity:1
+})
+
 tl.from(split.chars, {
  
     duration: 2,
@@ -82,13 +86,13 @@ tl.from(split.chars, {
     yPercent:"random([-100,100])",
     xPercent:"random([-100,100])",
     rotation:"random(-80,80)",
-    delay:8,
+    delay:9,
     autoAlpha:gsap.utils.random(1,0.3),
     repeat:-1,
     yoyo:true,
-    duration:2,
+    duration:3,
     stagger:{
-      amount:2,
+      amount:1,
       from:"random",
     
     }
@@ -305,7 +309,7 @@ xPercent:"0"
 
 const words = "I am Adebest and I love animations and visual effects"
   return (
-    <div className="w-[90%] mx-auto  h-screen flex items-center justify-center overflow-hidden">
+    <div className="w-[90%] mx-auto  h-screen flex items-center justify-center overflow-hidden opacity-0  all-container">
         
 
   <section className=" mx-auto w-full md:font-extrabold font-black lg:text-[6rem] md:text-[5rem] sm:text-[4.3rem] xs:text-[3.7rem] text-[3rem]">
