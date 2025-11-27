@@ -12,7 +12,7 @@ const [count,setCount] = useState(0)
 
       
 useEffect(()=>{
-   if (count == 5) {
+   if (count == 6) {
       return
    }
 const intervalCount = setInterval(()=>{
@@ -28,8 +28,8 @@ return ()=> clearInterval(intervalCount)
    <div className=''>
   
 
-   {count == 5 ? "" :<RollingText/>}
-{count == 5 && <Welcome/>}
+   {count == 6 ? "" :<RollingText/>}
+{count == 6 && <Welcome/>}
 
 
 

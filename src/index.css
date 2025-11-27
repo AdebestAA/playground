@@ -36,6 +36,18 @@ body{
     mix-blend-mode: difference;
 }
 
+/* path{
+    stroke-dasharray: 924.2469482421875px;
+    stroke-dashoffset: 924.2469482421875px;
+    animation: lineAnimation 5s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lineAnimation {
+    to{
+        stroke-dashoffset:0px ;
+    }
+} */
 
 @theme {
     --font-barlow: "Barlow Condensed";
@@ -60,5 +72,4 @@ body{
 transform: translateZ(0);
 will-change: transform;
   }
-
 
