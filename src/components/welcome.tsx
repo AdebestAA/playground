@@ -12,7 +12,8 @@ useEffect(()=>{
 
 
 const split = SplitText.create(".welcome-text",{
-    type:"chars"
+    type:"chars",
+    
 })
 
 const tl = gsap.timeline()
@@ -32,7 +33,9 @@ const tl = gsap.timeline()
 // })
 
 tl.from(split.chars, {
+ 
     duration: 2,
+
     yPercent: 100,
     scaleX:-1,
     autoAlpha: 0,
@@ -53,7 +56,7 @@ tl.from(split.chars, {
   })
   .to(split.chars, {
     scaleX:1,
-    duration: 1,
+    duration: 2,
     yPercent: 0,
     autoAlpha: 0.5,
     stagger: {
@@ -80,16 +83,13 @@ tl.from(split.chars, {
     xPercent:"random([-100,100])",
     rotation:"random(-80,80)",
     delay:8,
-   
-    autoAlpha:gsap.utils.random(1,0),
+    autoAlpha:gsap.utils.random(1,0.3),
     repeat:-1,
     yoyo:true,
     duration:2,
     stagger:{
       amount:2,
       from:"random",
-      // repeat:-1,
-      // yoyo:true,
     
     }
   })

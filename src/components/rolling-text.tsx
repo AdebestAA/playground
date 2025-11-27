@@ -27,7 +27,7 @@ const tl = gsap.timeline()
 boxesRef.current.forEach((box,index)=>{
     const clone = box.querySelectorAll(".clone")
     const original = box.querySelectorAll(".original")
-    console.log(clone);
+   
     
     gsap.set(clone,{
         yPercent:index % 2 == 0 ? -100 : 100
