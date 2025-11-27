@@ -83,12 +83,13 @@ tl.from(split.chars, {
 
 
   gsap.to(split.chars,{
-    yPercent:"random([-100,100])",
-    xPercent:"random([-100,100])",
+    yPercent:"random([-150,150])",
+    xPercent:"random([-150,150])",
     rotation:"random(-80,80)",
     delay:9,
     autoAlpha:gsap.utils.random(1,0.3),
     repeat:-1,
+    repeatDelay:2,
     yoyo:true,
     duration:3,
     stagger:{
