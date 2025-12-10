@@ -41,7 +41,7 @@ const ctx = gsap.context(()=>{
         scrollTrigger:{
             trigger:".scroll-container",
             start:"top top",
-            end:`+=${entireWidthToScroll()} 200px`,
+            end:`+=${entireWidthToScroll()} 600px`,
            pin:true,
             scrub:1,
             onUpdate:()=>{
@@ -51,7 +51,7 @@ const ctx = gsap.context(()=>{
                 console.log(words);
                 
                 
-             words.forEach((item,index)=>{
+             words.forEach((item,_)=>{
 if (item.getBoundingClientRect().x + (window.innerWidth / 3) < window.innerWidth) {
    
     
@@ -102,7 +102,7 @@ window.addEventListener("scroll",()=>{
   return (
     <div className='overflow-x-hidden'>
 
-        <h1 className='play text-[3rem] '>solid text play here</h1>
+        {/* <h1 className='play text-[3rem] '>solid text play here</h1> */}
 {/* <footer className='h-screen text-2xl'>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorum quas quidem voluptas necessitatibus laudantium perferendis, reprehenderit voluptatem minima aspernatur, placeat totam facilis ducimus eligendi officia temporibus commodi quaerat iure, tempora neque. Velit itaque amet neque nemo delectus eaque, numquam perspiciatis ea atque sit dolorem quaerat perferendis cum ex dolor, alias cupiditate dicta cumque quisquam sequi quis eligendi? Corporis libero ea omnis, ex rem id placeat. Eum inventore amet vel voluptatum blanditiis doloribus quas, expedita earum, obcaecati, numquam assumenda maiores tenetur eveniet ad magnam provident ut harum nemo accusamus dolorum aliquid perferendis itaque. Aspernatur soluta quibusdam libero. Accusantium, eum quia.
 </footer> */}
@@ -123,9 +123,9 @@ window.addEventListener("scroll",()=>{
 </article> */}
 
 {/* real scroll */}
-<section className='h-screen flex items-center w-max     scroll-container  bg-[red]  lg:py-0 py-18'>
+<section className='h-screen flex items-center w-max     scroll-container  lg:py-0 py-18'>
     
-<h1 className='lg:text-[18rem] md:text-[14rem] text-[10rem] item bg-blue-500 lg:h-screen h-[50vh]'>welcome to playground, I am Adebest and I love animations and visual effects</h1>
+<h1 className='lg:text-[18rem] md:text-[14rem] text-[4rem] item lg:h-screen h-[30vh]'>welcome to playground, I am Adebest and I love animations and visual effects</h1>
    
 </section>
 
