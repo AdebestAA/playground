@@ -123,8 +123,10 @@ window.addEventListener("scroll",()=>{
 </article> */}
 
 {/* real scroll */}
-<section className='h-screen  w-max scroll-container  bg-[red]  lg:py-0 py-18'>
-<h1 className='lg:text-[18rem] md:text-[14rem] text-[10rem] item '>welcome to playground, I am Adebest and I love animations and visual effects</h1>
+<section className='h-screen flex items-center w-max     scroll-container  bg-[red]  lg:py-0 py-18'>
+    
+<h1 className='lg:text-[18rem] md:text-[14rem] text-[10rem] item bg-blue-500 lg:h-screen h-[50vh]'>welcome to playground, I am Adebest and I love animations and visual effects</h1>
+   
 </section>
 
 
