@@ -5,22 +5,26 @@ import SplitTextCountries from './components/split-text-countries'
 import Playground from './components/playground'
 import RollingText from './components/rolling-text'
 import { useEffect, useState } from 'react'
+import ScrollTriggerPlay from './components/gsap/scroll-trigger'
+import ScrollTriggerOne from './components/gsap/scroll-triggers/scroll-trigger-one'
+import ScrollExampleTwo from './components/gsap/scroll-triggers/scroll-example-two'
+import ScrollExampleThree from './components/gsap/scroll-triggers/scroll-example-three'
 
 
 function App() {
-const [count,setCount] = useState(0)
+// const [count,setCount] = useState(0)
 
       
-useEffect(()=>{
-   if (count == 6) {
-      return
-   }
-const intervalCount = setInterval(()=>{
-setCount(prev => prev + 1)
-},1000)
+// useEffect(()=>{
+//    if (count == 6) {
+//       return
+//    }
+// const intervalCount = setInterval(()=>{
+// setCount(prev => prev + 1)
+// },1000)
 
-return ()=> clearInterval(intervalCount)
-},[count])
+// return ()=> clearInterval(intervalCount)
+// },[count])
 
   return (
 
@@ -28,8 +32,17 @@ return ()=> clearInterval(intervalCount)
    <div className=''>
   
 
+
+  {/* <ScrollExampleTwo/> */}
+  <ScrollExampleThree/>
+
+
+  {/* <>
    {count == 6 ? "" :<RollingText/>}
 {count == 6 && <Welcome/>}
+  </> */}
+
+
 
 
 
