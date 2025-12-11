@@ -1,10 +1,11 @@
 
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { use, useEffect, useState } from 'react'
+import {  useEffect, } from 'react'
 import { SplitText } from 'gsap/SplitText'
 
-gsap.registerPlugin(ScrollTrigger,SplitText)
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(SplitText)
 const ScrollExampleThree = () => {
 
 
