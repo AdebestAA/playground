@@ -80,7 +80,7 @@ will-change: transform;
 
 
 
-  .word1 div{
+  .word1{
     background: linear-gradient(45deg, #ff6a00, #ee0979);
     color: white;
     border: none;
@@ -88,7 +88,7 @@ will-change: transform;
     border-radius: 6px;
   }
 /*   
-  .word2 div{
+  .word2{
     background: linear-gradient(45deg, #36d1dc, #5b86e5);
     color: white;
     border: none;
@@ -96,7 +96,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word3 div{
+  .word3{
     background: linear-gradient(45deg, #11998e, #38ef7d);
     color: white;
     border: none;
@@ -111,9 +111,9 @@ will-change: transform;
     padding: 2px 2px;
     border-radius: 6px;
   }
-  
+
 /*   
-  .word5 div{
+  .word5{
     background: linear-gradient(45deg, #f7971e, #ffd200);
     color: white;
     border: none;
@@ -121,7 +121,7 @@ will-change: transform;
     border-radius: 6px;
   }
    */
-  /* .word6 div{
+  /* .word6{
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: white;
     border: none;
@@ -129,7 +129,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word7 div{
+  .word7{
     background: linear-gradient(45deg, #00c6ff, #0072ff);
     color: white;
     border: none;
@@ -137,7 +137,7 @@ will-change: transform;
     border-radius: 6px;
   } */
   
-  .word8 div{
+  .word8{
     background: linear-gradient(45deg, #da22ff, #9733ee);
     color: white;
     border: none;
@@ -145,7 +145,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  /* .word9 div{
+  /* .word9{
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
     color: white;
     border: none;
@@ -153,7 +153,7 @@ will-change: transform;
     border-radius: 6px;
   } */
   
-  .word10 div{
+  .word10{
     background: linear-gradient(45deg, #4facfe, #00f2fe);
     color: white;
     border: none;
