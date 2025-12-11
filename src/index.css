@@ -80,7 +80,7 @@ will-change: transform;
 
 
 
-  .word1{
+ .word1:nth-child(1){
     background: linear-gradient(45deg, #ff6a00, #ee0979);
     color: white;
     border: none;
@@ -104,7 +104,7 @@ will-change: transform;
     border-radius: 6px;
   }
    */
-  .word4{
+    .word4:nth-child(1){
     background: linear-gradient(45deg, #7f00ff, #e100ff);
     color: white;
     border: none;
@@ -113,7 +113,7 @@ will-change: transform;
   }
 
   
-  .word5{
+   .word5:nth-child(1){
     background: linear-gradient(45deg, #f7971e, #ffd200);
     color: white;
     border: none;
@@ -121,7 +121,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word6{
+ .word6:nth-child(1){
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: white;
     border: none;
@@ -129,7 +129,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word7{
+  .word7:nth-child(1){
     background: linear-gradient(45deg, #00c6ff, #0072ff);
     color: white;
     border: none;
@@ -137,7 +137,7 @@ will-change: transform;
     border-radius: 6px;
   } 
   
-  .word8{
+ .word8:nth-child(1){
     background: linear-gradient(45deg, #da22ff, #9733ee);
     color: white;
     border: none;
@@ -145,7 +145,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word9{
+ .word9:nth-child(1){
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
     color: white;
     border: none;
@@ -153,7 +153,7 @@ will-change: transform;
     border-radius: 6px;
   }
   
-  .word10{
+  .word10:nth-child(1){
     background: linear-gradient(45deg, #4facfe, #00f2fe);
     color: white;
     border: none;
