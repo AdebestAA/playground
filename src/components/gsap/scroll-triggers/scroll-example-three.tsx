@@ -41,7 +41,7 @@ const ctx = gsap.context(()=>{
         scrollTrigger:{
             trigger:".scroll-container",
             start:"top top",
-            end:`+=${entireWidthToScroll()} 600px`,
+            end:`+=${entireWidthToScroll() + 2000}px `,
            pin:true,
             scrub:1,
             onUpdate:()=>{
@@ -78,7 +78,7 @@ if (item.getBoundingClientRect().x + (window.innerWidth / 3) < window.innerWidth
 
 
         tl.to(".item",{
-        x:-entireWidthToScroll(),
+        x:-entireWidthToScroll() - 800,
         duration:3,
         ease:"none",
         },0)
@@ -123,9 +123,9 @@ window.addEventListener("scroll",()=>{
 </article> */}
 
 {/* real scroll */}
-<section className='h-screen flex items-center w-max     scroll-container  lg:py-0 py-18'>
+<section className='h-screen flex items-center min-w-max     scroll-container  lg:py-0 py-18'>
     
-<h1 className='lg:text-[18rem] md:text-[14rem] text-[4rem] item lg:h-screen h-[30vh]'>welcome to playground, I am Adebest and I love animations and visual effects</h1>
+<h1 className='lg:text-[7rem] md:text-[5rem] text-[4rem] item  h-[30vh]'>welcome to my playground, I am Adebest and I love animations and visual effects</h1>
    
 </section>
 
